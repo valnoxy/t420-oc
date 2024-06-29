@@ -21,8 +21,10 @@
 </br>
 
 ## ⚠️ Disclaimer
-This guide is only for the Lenovo ThinkPad T420. I am NOT responsible for any harm you cause to your device. This guide is provided "as-is" and all steps taken are done at your own risk.
+> [!CAUTION]
+> This repo is **Work in Progress**! Expect possible bugs and instability! The development of this project is very slow at the moment because I don't have the time for it.
 
+This guide is only for the Lenovo ThinkPad T420. I am NOT responsible for any harm you cause to your device. This guide is provided "as-is" and all steps taken are done at your own risk.
 > This configuration is based of this [repository by tluck](https://github.com/tluck/Lenovo-T420-Clover).
 
 &nbsp;
@@ -35,8 +37,8 @@ This repo includes multiple EFI configuations for different macOS Versions.
 
 | EFI               | Description                                                               | Type      |
 | ----------------- | ------------------------------------------------------------------------- | --------- |
-| `EFI`             | Supports macOS Monterey, Ventura & Sonoma (using Airportitlwm)            | `Stable`  |
-| `EFI - HeliPort`  | Supports every macOS Version except Ventura, Require HeliPort app         | `Stable`  |
+| `EFI`             | Supports macOS High Sierra & Catalina (using Airportitlwm)                | `Stable`  |
+| `EFI - HeliPort`  | Supports every macOS Version, Require HeliPort app                        | `Soon`    |
 
 <a href="https://github.com/OpenIntelWireless/HeliPort/releases"><strong>
 Download HeliPort app »</strong></a>
@@ -268,21 +270,7 @@ After creating the install media, copy your EFI folder to the EFI partition of y
 <summary><strong>✅ What's working</strong></summary>
 </br>
  
-- [X] Intel WiFi & Bluetooth (thanks to [itlwn](https://github.com/OpenIntelWireless/itlwm))
-- [X] Brightness / Volume Control
-- [X] Battery Information
-- [X] Audio (Audio Jack & Speaker)
-- [X] USB Ports & Built-in Camera
-- [X] Graphics Acceleration
-- [X] Trackpoint / Touchpad
-- [X] Power management / Sleep
-- [X] FaceTime / iMessage (iServices)
-- [X] HDMI
-- [X] Automatic OS updates
-- [X] Handoff / Universal Clipboard
-- [X] Sidecar (Cable) / AirPlay to Mac
-- [X] SIP / FireVault 2
-- [X] USB-C
+- [X] It boots
 
 </details>
 
@@ -291,9 +279,8 @@ After creating the install media, copy your EFI folder to the EFI partition of y
 </br>
 
 - [ ] Safari DRM ```Use Chromium powered Browser or Firefox to watch Amazon Prime Video, Netflix, Disney+ and others```
-- [ ] AirDrop & Continuity (only devices with Intel WiFi)
+- [ ] AirDrop & Continuity (devices with Intel WiFi)
 - [ ] Fingerprint Reader (Disabled with NoTouchID kext)
-- [ ] Thunderbolt 3
 - [ ] Sidecar Wireless
 - [ ] Apple Watch Unlock
 - [ ] Dualbooting Windows / Linux (with OpenCore) ```Theoretically, this works, but due to the ACPI patches, the respective operating system can become unstable.```
@@ -304,6 +291,21 @@ After creating the install media, copy your EFI folder to the EFI partition of y
 <summary><strong>🔄 Not tested</strong></summary>
 </br>
 
+- [ ] Intel WiFi & Bluetooth (thanks to [itlwn](https://github.com/OpenIntelWireless/itlwm))
+- [ ] Brightness / Volume Control
+- [ ] Battery Information
+- [ ] Audio (Audio Jack & Speaker)
+- [ ] USB Ports & Built-in Camera
+- [ ] Graphics Acceleration
+- [ ] Trackpoint / Touchpad
+- [ ] Power management / Sleep
+- [ ] FaceTime / iMessage (iServices)
+- [ ] HDMI
+- [ ] Automatic OS updates
+- [ ] Handoff / Universal Clipboard
+- [ ] Sidecar (Cable) / AirPlay to Mac
+- [ ] SIP / FireVault 2
+- [ ] USB-C
 - [ ] WWAN
 
 </details>
@@ -322,7 +324,7 @@ This repo is licensed under the [MIT License](https://github.com/valnoxy/t420-oc
 OpenCore is licensed under the [BSD 3-Clause License](https://github.com/acidanthera/OpenCorePkg/blob/master/LICENSE.txt).
 
 <hr>
-<h6 align="center">© 2018 - 2023 valnoxy. All Rights Reserved. 
+<h6 align="center">© 2018 - 2024 valnoxy. All Rights Reserved. 
 <br>
 By Jonas Günner &lt;jonas@exploitox.de&gt;</h6>
 <p align="center">
